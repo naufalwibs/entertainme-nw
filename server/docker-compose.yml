@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: "mongo:4.4.5"
+    ports: 
+        - "37017:27017"
+    command: mongod
+  redis:
+    image: "redis"
+    ports: "7000:6379"
+app:
+    depends_on: 
+        - mongo
+        image: "naufalwibs/movies"
+        command: npm run dev
+        ports: "1001:4001"
+app:
+    depends_on: 
+        - mongo
+        image: "naufalwibs/series"
+        command: npm run dev
+        ports: "1002:4002"
+app:
+    depends_on: 
+        - naufalwibs/movies
+        - naufalwibs/series
+        - redis
+        image: "naufalwibs/orchestrator"
+        command: npm run dev
+        ports: "1000:4000"

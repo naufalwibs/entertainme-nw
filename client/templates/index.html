@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a5b26f850d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Entertainme</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #002139"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/nav-logo.png"
+            alt="Nav-Logo"
+            height="32"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Likes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genre
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Editor
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Add Movie</a></li>
+                <li><a class="dropdown-item" href="#">Update Movie</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Add TV Series</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Update TV Series</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOMEPAGE CAROUSEL AND MOVIE -->
+    <section id="home-page">
+      <!-- CARROUSEL -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-height"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-height-img active">
+            <img
+              src="./assets/main-banner.png"
+              class="d-block w-100"
+              alt="main-banner"
+            />
+            <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div> -->
+          </div>
+          <div class="carousel-item carousel-height-img">
+            <img
+              src="./assets/movie-1-banner.png"
+              class="d-block w-100"
+              alt="movie-1-banner"
+            />
+            <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div> -->
+          </div>
+          <div class="carousel-item carousel-height-img">
+            <img
+              src="./assets/movie-2-banner.png"
+              class="d-block w-100"
+              alt="movie-1-banner"
+            />
+            <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div> -->
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-lg-2">
+            <h3 class="pb-3 text-start">Movies</h3>
+          </div>
+          <div class="col-lg-2">
+            <button class="btn btn-dark">See More..</button>
+          </div>
+        </div>
+        <div class="row">
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom mb-4"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom mb-4"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdIhrD9C8kWpot0FIsmQDJoGL3mRRz-l97R5r-I6KiNS5xiuRKhHYFcz0F6JY-EXw9ZE&usqp=CAU"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Dora</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container pt-4">
+            <div class="row">
+              <div class="col-lg-2">
+                <h3 class="pb-3 text-start">TV Series</h3>
+              </div>
+              <div class="col-lg-2">
+                <button class="btn btn-dark">See More..</button>
+              </div>
+            </div>
+            <div class="row">
+              <!-- MOVIE CARD -->
+              <div
+                class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom mb-4"
+              >
+                <div class="card bg-dark text-white">
+                  <img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                    class="card-img movie-img"
+                    alt="poster"
+                  />
+                  <div
+                    class="card-img-overlay detail-card truncate d-flex flex-column"
+                  >
+                    <div class="bottom-align-text">
+                      <h5 class="card-title">Archer</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural.
+                      </p>
+                      <p class="card-text">Popularity: 9.8</p>
+                      <p class="card-text mb-1">
+                        <i class="fas fa-play"></i> Watchnow
+                      </p>
+                      <p class="card-text mb-1">
+                        <i class="fas fa-plus"></i> Add to Likes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVIES PAGE -->
+    <section id="movies-page">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-height-img">
+            <img
+              src="./assets/specific-banner-4.jpg"
+              class="d-block w-100"
+              alt="banner-specific"
+            />
+          </div>
+          <div class="carousel-item carousel-height-img">
+            <img
+              src="./assets/specific-banner-2.png"
+              class="d-block w-100"
+              alt="banner-specific"
+            />
+          </div>
+          <div class="carousel-item carousel-height-img">
+            <img
+              src="./assets/specific-banner-3.png"
+              class="d-block w-100"
+              alt="banner-specific"
+            />
+          </div>
+          <div class="carousel-item carousel-height-img">
+            <img
+              src="./assets/specific-banner-1.png"
+              class="d-block w-100"
+              alt="banner-specific"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-lg-2">
+            <h3 class="pb-3 text-start">Movies</h3>
+          </div>
+          <div class="col-lg-2">
+            <button class="btn btn-dark">See More..</button>
+          </div>
+        </div>
+        <div class="row">
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom mb-4"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom mb-4"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdIhrD9C8kWpot0FIsmQDJoGL3mRRz-l97R5r-I6KiNS5xiuRKhHYFcz0F6JY-EXw9ZE&usqp=CAU"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Dora</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOVIE CARD -->
+          <div
+            class="col-lg-2 col-md-3 col-sm-6 movie-container img-hover-zoom--quick-zoom"
+          >
+            <div class="card bg-dark text-white">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                class="card-img movie-img"
+                alt="poster"
+              />
+              <div
+                class="card-img-overlay detail-card truncate d-flex flex-column"
+              >
+                <div class="bottom-align-text">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a
+                    natural.
+                  </p>
+                  <p class="card-text">Popularity: 9.8</p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-play"></i> Watchnow
+                  </p>
+                  <p class="card-text mb-1">
+                    <i class="fas fa-plus"></i> Add to Likes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADD OR EDIT PAGE -->
+    <section id="add-page">
+      <div class="container">
+        <div class="col-lg">
+          <h2 class="text-center">Add Movie</h2>
+        </div>
+      </div>
+      <div class="container container-width">
+        <div class="col-lg">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Title</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Movie Title"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Overview</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Movie Overview"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Poster</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Movie Poster Path"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Popularity</label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Movie Popularity Rating"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Genre</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Movie Tags Genre"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Add Movie</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVIE DETAIL -->
+    <section id="movie-detail">
+      <div class="container">
+        <div class="col-lg">
+          <div class="card mb-3 detail-background">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex justify-content-center">
+                <img
+                  src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1576732289"
+                  alt="Detail"
+                  class="detail-image"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Archer</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">Popularity: 8.5</p>
+                  <p class="card-text">Genre: Action</p>
+                </div>
+                <div class="col-lg text-center">
+                  <button class="btn btn-primary">Add to Favorite</button>
+                  <button class="btn btn-primary">Delete Movie</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">Developed by Naufal W.</span>
+        </div>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

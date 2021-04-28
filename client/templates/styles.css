@@ -1,0 +1,76 @@
+body {
+  font-family: "Lexend", sans-serif;
+  color: white;
+}
+
+#home-page,
+#movies-page,
+#add-page,
+#movie-detail {
+  /* height: 95vh; */
+  background-color: #002743;
+}
+
+.detail-background {
+  background-color: #004474;
+  border-radius: 10px;
+}
+
+.detail-image {
+  border-radius: 10px;
+  height: 41rem;
+}
+
+.carousel-height-img {
+  height: 45rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail-card {
+  opacity: 0;
+}
+
+.detail-card:hover {
+  background-color: rgba(29, 29, 29, 0.482);
+  opacity: 1;
+}
+
+.movie-container {
+  height: 25vh;
+  width: 22.4ch;
+}
+
+.movie-img {
+  height: 18.75rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.truncate {
+  overflow: hidden;
+  max-width: 75ch;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+}
+
+.img-hover-zoom--quick-zoom {
+  transform-origin: 0.5 0.5;
+  transition: transform 0.25s, visibility 0.25s ease-in;
+}
+
+/* The Transformation */
+.img-hover-zoom--quick-zoom:hover {
+  transform: scale(1.05);
+}
+
+.container-width {
+  width: 50rem;
+}

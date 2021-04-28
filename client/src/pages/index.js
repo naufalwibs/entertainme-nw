@@ -1,0 +1,10 @@
+export { default as Home } from "./Home";
+export { default as Movies } from "./Movies";
+export { default as Series } from "./Series";
+export { default as DetailMovie } from "./DetailMovie";
+export { default as DetailSeries } from "./DetailSeries";
+export { default as AddMovie } from "./AddMovie";
+export { default as AddSeries } from "./AddSeries";
+export { default as EditMovie } from "./EditMovie";
+export { default as EditSeries } from "./EditSeries";
+export { default as Favorites } from "./Favorites";
